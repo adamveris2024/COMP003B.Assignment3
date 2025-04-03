@@ -1,0 +1,11 @@
+﻿@model COMP003B.Assignment3.Models.EventRegistration
+
+@{
+	ViewData["Title"] = "Registration Success";
+}
+
+<h2>Registration Successful</h2>
+
+<p>Thank you, @Model.Name</p>
+<p>The email you entered is <strong>@Model.Email</strong></p>
+<p>You have successfully registered for <strong>@Model.EventCode</strong> with @Model.Tickets ticket(s).</p>

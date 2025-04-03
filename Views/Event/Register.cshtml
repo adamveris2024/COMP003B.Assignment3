@@ -1,0 +1,39 @@
+﻿@{
+	ViewData["Title"] = "Event - Register";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@model COMP003B.Assignment3.Models.EventRegistration
+
+<h2>Event Registration</h2>
+<form asp-action="Register" method="post">
+	<div>
+		<partial name="_EventNav" />
+	</div>
+	<div>
+		<label asp-for="Name"></label>
+		<input asp-for="Name"  class="form-control"/>
+		<span asp-validation-for="Name" class="text-danger"></span>
+	</div>
+	<div>
+		<label asp-for="Email"></label>
+		<input asp-for="Email" class="form-control" />
+		<span asp-validation-for="Email" class="text-danger"></span>
+	</div>
+	<div>
+		<label asp-for="EventCode"></label>
+		<input asp-for="EventCode" class="form-control" />
+		<span asp-validation-for="EventCode" class="text-danger"></span>
+	</div>
+	<div>
+		<label asp-for="Tickets"></label>
+		<input asp-for="Tickets" class="form-control" />
+		<span asp-validation-for="Tickets" class="text-danger"></span>
+	</div>
+	<button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}

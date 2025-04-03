@@ -1,3 +1,7 @@
+/// Author: Adam Verissimo
+/// Course: COMP-003B: ASP.NET Core
+/// Faculty: Jonathan Cruz
+/// Purpose: Event Regristration
 namespace COMP003B.Assignment3
 {
     public class Program
